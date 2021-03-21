@@ -13,7 +13,8 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "dev-plugins": "watch 'kill-port --port 8000 && gatsby develop' plugins "
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^1.2.18",
@@ -28,6 +29,8 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.2",
+    "kill-port": "^1.6.1",
+    "watch": "^1.0.2"
   }
 }
